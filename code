@@ -17,7 +17,7 @@ void loop()
   value = analogRead(ldr);  //read value-analog from A0
   Serial.println(value);    
   delay(100);
-  if(value<400)  //change the value as you wish
+  if(value<100)  //change the value as you wish
   {
     sglass.write(155); //black glass down
     delay(100);     //a bit delay for the servo to move there
